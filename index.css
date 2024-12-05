@@ -1,0 +1,352 @@
+/* Navbar background */
+.custom-navbar {
+    background-color: transparent;
+    transition: background-color 0.5s;
+}
+
+/* Navbar background when scrolling */
+.custom-navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: white !important;
+    margin: 0 10px;
+}
+
+/* Button with transparent background */
+.custom-btn {
+    border: 2px solid yellow;
+    color: white;
+    background-color: transparent;
+    padding: 5px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button hover effect */
+.custom-btn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Button style when navbar is scrolled */
+.custom-navbar.scrolled .custom-btn {
+    background-color: transparent;
+    border-color: yellow;
+    color: white;
+}
+
+/* Section styles */
+section {
+    height: 100vh;
+    padding: 60px;
+    text-align: center;
+}
+
+.home { 
+    background-image: url(./Assests/img/hero-bg.jpg);
+    background-size: cover; /* Ensure the image covers the entire width and height */
+    height: 100vh; /* Full viewport height */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 0; /* Remove padding to ensure full coverage */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.home::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+    z-index: 1; /* Ensure the overlay is on top */
+}
+.home>*{
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+.home h1{
+    font-weight: 700;
+    font-size: 64px;
+}
+.home p{
+    font-size: 24px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+.custom-card {
+    border: 0.9px solid rgba(255, 255, 255, 0.6); /* Semi-transparent white border */
+    background: rgba(0, 0, 0, 0.4); /* Transparent black background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 180px;
+    height: 150px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.custom-card i {
+    font-size: 35px;
+    color: yellow; /* Yellow color for icons */
+    margin-bottom: 10px;
+    align-content: center;
+}
+
+.custom-card h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.about{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f9f9f9; /* Adjust to match the background color */
+  
+}
+  .content {
+    width: 50%;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Adjust to match the font color */
+    line-height: 1.6;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+  }
+  
+  .content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .content ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .content ul li i {
+    color: #f89b29; /* Adjust to match the tick icon color */
+    margin-right: 10px;
+    font-size: 1.2rem; /* Adjust to the size in the image */
+  }
+  
+  .image {
+    width: 45%;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional for rounded corners */
+  }
+  
+
+
+
+
+
+
+/* #services { background-color: #28a745; color: white; } */
+.services-section {
+    background-color: #f8f9fa; /* Light background similar to the image */
+  }
+  
+  .text-warning {
+    color: #ffc107 !important;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  .service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: #ffc107;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .icon-box i {
+    font-size: 24px;
+    color: black;
+  }
+  
+  h5 {
+    font-weight: 600;
+  }
+  
+  p {
+    color: #6c757d;
+    font-size: 14px;
+  }
+  
+
+/* .portfolio section starts*/
+  .portfolio {
+  
+    /* background-color: #f4f4f4; */
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    height: 120vh;
+  }
+  
+  .portfolio h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    margin-bottom: 30px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #ffd700;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .tab.active {
+    background-color: #ffcc00;
+    font-weight: bold;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;  
+  }
+  
+  .grid-item {
+    overflow: hidden;
+    border-radius: 10px;
+    /* background-color: #fff; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .grid-item img {
+    width: 200px; /* Make images fill their container */
+    height: auto;
+    object-fit: cover;
+  }
+  /* .portfolio ends */
+  .stats-icon {
+    font-size: 2.5rem;
+  }
+  .stats-section h2 {
+    font-weight: bold;
+  }
+  .stats-section p {
+    font-size: 0.9rem;
+  }
+  .stats-section h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+/* #team { background-color: #17a2b8; color: white; } */
+.team-section h6 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #f4a834;
+  }
+  .team-section h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .card-img-top {
+    border-radius: 10px 10px 0 0;
+    height: 300px;
+    object-fit: cover;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .text-muted {
+    font-size: 14px;
+  }
+  
+/* #contact { background-color: #dc3545; color: white; } */
+
+.icon-box1 {
+    background-color: #f4a834;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .contact-info h5 {
+    margin-bottom: 5px;
+  }
+  .contact-info p {
+    margin: 0;
+  }
+  .form-control {
+    border-radius: 5px;
+  }
+  .btn-custom {
+    background-color: #f4a834;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  .btn-custom:hover {
+    background-color: #d99030;
+  }
+  
